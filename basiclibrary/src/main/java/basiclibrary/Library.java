@@ -60,7 +60,6 @@ public class Library {
                 }
             }
         }
-        System.out.println(Arrays.toString(number[index]));
         return number[index];
     }
 }
