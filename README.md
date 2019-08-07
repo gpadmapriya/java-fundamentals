@@ -7,3 +7,9 @@
 - Feature Task 3 - clock()
   - Method that uses java's built-in LocalDateTime object to constantly print out the current time to the console, second by second until execution is stopped with CTRL-C. 
   - Stretch goal - upgrade the command line clock to show how fast the program is processing itself.
+
+Day2 - basiclibrary
+- Roll dice n times, return an array with rolled values - roll(n)
+- Check if an input int array contains duplicates - containsDuplicates(int[])
+- calculate the average of an array of integers - returnAverage(int[])
+- Array of arrays - given an array of arrays calculate average for each array and return the array with the lowest average
