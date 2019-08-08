@@ -1,4 +1,4 @@
-# Java Fundamentals labs
+### Java Fundamentals labs
 [Day1 Labs - Main.java](https://github.com/gpadmapriya/java-fundamentals/tree/master/basics)
 - Feature Task 1 - pluralize()
   - Method that accepts a word and a number and returns a string with word pluralized if number is 0 or greater than 1 
@@ -13,3 +13,10 @@
 - Check if an input int array contains duplicates - containsDuplicates(int[])
 - calculate the average of an array of integers - returnAverage(int[])
 - Array of arrays - given an array of arrays calculate average for each array and return the array with the lowest average
+
+[Day3 - Maps](https://github.com/gpadmapriya/java-fundamentals/tree/master/basiclibrary)
+- Analyze weather data, print max and min temperatures and any temperature not seen in the month - analyzeWeatherData(int[][])
+- Tallying Election - Function that accepts a list of strings representing votes and returns the winner - tally(List<>)
+
+[Day3 - File I/O](https://github.com/gpadmapriya/java-fundamentals/tree/master/linter)
+- Method that reads a java script file with a given path and generates an error message when it finds a line that does not end in semicolon.
