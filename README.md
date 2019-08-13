@@ -20,3 +20,18 @@
 
 [Day3 - File I/O](https://github.com/gpadmapriya/java-fundamentals/tree/master/linter)
 - Method that reads a java script file with a given path and generates an error message when it finds a line that does not end in semicolon.
+
+[Inheritance](https://github.com/gpadmapriya/java-fundamentals/tree/master/inheritance)
+- Create classes and use inheritance to represent reviews of restaurants.
+- Create a Restaurant class and a Review class
+- I chose to implement this using inheritance rather than an interface.
+- Create a RestaurantReview class that inherits from Review.
+- Have a list of RestaurantReviews as a property in Restaurant class.
+- Create a new RestaurantReview and add it to the list in addReview(Review newReview) method
+- To test
+  - Restaurant constructor(String restaurantName, int numberOfStars, int priceCategory)
+  - Review constructor(String authorName, int numberOfStars, String reviewText)
+  - RestaurantReview constructor(String authorName, int numberOfStars, String reviewText, String restaurantName)
+  - Instantiate a restaurant object, a review object and call addReview(review) on the restaurant instance passing in the review instance.
+  - Call toString() on the restaurant instance to get all information.
+        
