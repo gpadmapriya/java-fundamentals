@@ -4,6 +4,8 @@ public class Review {
     private String authorName;
     private int numberOfStars;
     private String reviewText;
+    private String movieName;
+
 
     public Review(){
         this.authorName = "No reviews yet";
@@ -15,6 +17,13 @@ public class Review {
         this.numberOfStars = numberOfStars;
         this.reviewText = reviewText;
     }
+    public Review(String authorName, int numberOfStars, String reviewText, String movieName){
+        this.authorName = authorName;
+        this.numberOfStars = numberOfStars;
+        this.reviewText = reviewText;
+        this.movieName = movieName;
+    }
+
     public String getAuthorName() {
         return authorName;
     }
@@ -38,9 +47,21 @@ public class Review {
         this.reviewText = reviewText;
     }
 
-    public String toString(){
+    public String getMovieName() {
+        return movieName;
+    }
+
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
+    public String toString(Review review){
         String returnString = "";
-        returnString = "Review by: " + this.authorName + "\nRating: " + this.numberOfStars + " stars\nComments: " + this.reviewText;
+        if (review.movieName != null){
+            returnString = "Review by: " + this.authorName + "\nRating: " + this.numberOfStars + " stars\nComments: " + this.reviewText + "\nMovie Name: " + this.movieName;
+        } else {
+            returnString = "Review by: " + this.authorName + "\nRating: " + this.numberOfStars + " stars\nComments: " + this.reviewText;
+        }
         return returnString;
     }
 }

@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.*;
 
-public class Restaurant {
+public class Restaurant implements Reviewable{
     private String restaurantName;
     private int numberOfStars;
     private int priceCategory;
@@ -51,20 +51,24 @@ public class Restaurant {
         switch (this.priceCategory){
             case 1 :
                 priceCategory = "$ (range: $1 to $10 per person)";
+                break;
             case 2 :
                 priceCategory = "$$ (range: $11 to $20 per person)";
+                break;
             case 3 :
                 priceCategory = "$$$ (range: $21 to $30 per person)";
+                break;
             case 4 :
                 priceCategory = "$$$$ (range: $31+ per person) ";
+                break;
             default:
                 priceCategory = "$ (range: $1 to $10 per person)";
         }
         String returnString = "The rating for " + this.restaurantName + " is " + this.numberOfStars + " stars\n" + "Price Category: " + priceCategory + "\n";
 
         if (this.getReviews() != null) {
-            for (RestaurantReview r : reviews) {
-                returnString = returnString + r.toString() + "\n";
+            for (RestaurantReview review : reviews) {
+                returnString = returnString + review.toString(review) + "\n";
             }
         }
         return returnString;
