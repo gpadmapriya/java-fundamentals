@@ -34,4 +34,12 @@
   - RestaurantReview constructor(String authorName, int numberOfStars, String reviewText, String restaurantName)
   - Instantiate a restaurant object, a review object and call addReview(review) on the restaurant instance passing in the review instance.
   - Call toString() on the restaurant instance to get all information.
+
+[Interface](https://github.com/gpadmapriya/java-fundamentals/tree/master/inheritance)
+- Add a Shop class and make it reviewable
+- Implement a Reviewable interface to review any business
+- Add a Theatre class and make it reviewable
+- In addition to reviews, theatres should also have a list of movies playing
+- Add methods to add and remove movies playing
+- Reviews for theatres may or may not include a movie name
         
